@@ -4,7 +4,7 @@ Plugin Name: Creative Pixel Bundle
 Plugin URI: https://creativepixel.design/cpb
 Author: Creative Pixel
 Author URI: https://creativepixel.design
-Version: 0.0.0.24
+Version: 0.0.0.25
 Description: A collection of plugins installed on all Creative Pixel websites. Includes Clientside V1.5.0, WP Post Page Clone V1.0 & Autologin Links 1.07.
 */
 
@@ -108,7 +108,7 @@ function register_my_custom_menu_page(){
 
 function register_my_custom_submenu_page() {
     add_submenu_page( 'cpb/about', 'About', 'About', 'manage_options', 'cpb/about', 'cpb_about' );
-    add_submenu_page( 'cpb/about', 'Change Log', 'Change Log', 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
+    add_submenu_page( 'cpb/about', "What's New", 'Change Log', 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
     add_submenu_page( 'cpb/about', 'Crew Stats', 'Crew Stats', 'manage_options', 'my-custom-submenu-page_2', 'my_custom_submenu_page_2' );
     //add_submenu_page_3 ... and so on
 }
@@ -153,8 +153,9 @@ if ( $tab == 'first' ) {
 else if ( $tab == 'second' ) {
     // add the code you want to be displayed in the first tab
     ?>
-    <div class="cpb-changelog-wrap"><h2>Version: 0.0.0.24</h2><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
-    <?php
+    <div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
+		<div class="cpb-changelog-wrap"><h3>Version: 0.0.0.24</h3><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
+		<?php
 }
 else {
 

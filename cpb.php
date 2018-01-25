@@ -196,8 +196,9 @@ function cpb_change() {
 	<div class="wrap">
 		<h2><?php echo "".CPB_CURRENT_NAME;  ?> - <?php echo "".CPB_CURRENT_VERSION;  ?></h2>
 		<br>
-		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
-		<div class="cpb-changelog-wrap"><h3>Version: 0.0.0.24</h3><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
+		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25 - Current</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
+		<hr>
+		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.24</h2><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
 
 	</div>
 	<?php

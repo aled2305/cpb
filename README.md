@@ -1,2 +1,2 @@
 # cpb
-Creative Pixel Bundle
+Creative Pixel Bundle Version 0.0.0.24

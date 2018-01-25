@@ -108,7 +108,7 @@ function register_my_custom_menu_page(){
 
 function register_my_custom_submenu_page() {
     add_submenu_page( 'cpb/about', 'About', 'About', 'manage_options', 'cpb/about', 'cpb_about' );
-    add_submenu_page( 'cpb/about', "What's New", "What's New", 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
+    add_submenu_page( 'cpb/about', "What's New", "What's New", 'manage_options', 'cpb/change', 'cpb_change' );
     add_submenu_page( 'cpb/about', 'Crew Stats', 'Crew Stats', 'manage_options', 'my-custom-submenu-page_2', 'my_custom_submenu_page_2' );
     //add_submenu_page_3 ... and so on
 }
@@ -191,27 +191,18 @@ if ( is_plugin_active( 'cpb_insynergy/cpb_insynerg.php' ) ) {
 
 }
 
-/* function cpb_change() {
+function cpb_change() {
     ?>
 	<div class="wrap">
 		<h2><?php echo "".CPB_CURRENT_NAME;  ?> - <?php echo "".CPB_CURRENT_VERSION;  ?></h2>
 		<br>
-        <h3>Version 0.0.0.21</h3>
-		<br>
-		<ou>
-			<li>Added style to CPB Menu item</li>
-            <li>Moved menu item to top</li>
-		</ou>
-		<br>
-		<h3>Version 0.0.0.20</h3>
-		<br>
-		<ou>
-			<li>Added About Page</li>
-		</ou>
+		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
+		<div class="cpb-changelog-wrap"><h3>Version: 0.0.0.24</h3><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
+
 	</div>
 	<?php
 }
-*/
+
 
 
 

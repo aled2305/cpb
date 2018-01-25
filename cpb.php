@@ -4,14 +4,14 @@ Plugin Name: Creative Pixel Bundle
 Plugin URI: https://creativepixel.design/cpb
 Author: Creative Pixel
 Author URI: https://creativepixel.design
-Version: 0.0.0.25
+Version: 1.0
 Description: A collection of plugins installed on all Creative Pixel websites. Includes Clientside V1.5.0, WP Post Page Clone V1.0 & Autologin Links 1.07.
 */
 
 
-include dirname(__FILE__) . '/Clientside/index.php';
 include dirname(__FILE__) . '/wp-post-page-clone/wp-post-page-clone.php';
 include dirname(__FILE__) . '/autologin-links/autologin-links.php';
+include dirname(__FILE__) . '/ultra-admin/ultra-core.php';
 
 /* --------------------------------------------------------------------
 AUTO Update Check
@@ -145,14 +145,14 @@ if ( $tab == 'first' ) {
     // add the code you want to be displayed in the first tab
     ?>
     <div class="cpb-about-wrap">The <?php echo "".CPB_CURRENT_NAME;  ?> is a collection of plugins installed on every Creative Pixel Design WordPress powered site.
-    <br><h2>Included Plugins -</h2><ul><li> Clientside V1.5.0</li><li>WP Post Page Clone V1.0</li></ul>
+    <br><h2>Included Plugins -</h2><ul><li> Ultra Admin V7.4</li><li>WP Post Page Clone V1.0</li></ul>
     </div>
     <?php
 }
 else if ( $tab == 'second' ) {
     // add the code you want to be displayed in the first tab
     ?>
-    <div class="cpb-changelog-wrap"><h2>Clientside V1.5.0</h2><span style="font-size:12px;"> https://codecanyon.net/item/clientside-wordpress-admin-theme/11154668 </span></div><br>
+    <div class="cpb-changelog-wrap"><h2>Ultra Admin V7.4</h2><span style="font-size:12px;"> https://codecanyon.net/item/ultra-wordpress-admin-theme/9220673 </span></div><br>
 		<div class="cpb-changelog-wrap"><h2>WP Post Page Clone V1.0</h2><span style="font-size:12px;"> https://wordpress.org/plugins/wp-post-page-clone/ </span></div><br>
 		<?php
 }
@@ -195,10 +195,9 @@ function cpb_change() {
 	<div class="wrap">
 		<h2><?php echo "".CPB_CURRENT_NAME;  ?> - <?php echo "".CPB_CURRENT_VERSION;  ?></h2>
 		<br>
-		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25 - Current</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
+		<div class="cpb-changelog-wrap"><h2>Version: 1.0 - Current</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Added new admin theme</li></ul></div>
 		<hr>
-		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.24</h2><span style="font-size:12px;"> Release Date: Jan 22, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Minor UI improvements</li><li>Resolved Drupal 8 slideshow issues</li><li>Magento 1.x Continue Shopping button issue resolved</li><li>Resolved minor CSS issues</li></ul></div>
-
+		<div class="cpb-changelog-wrap"><h2>Version: 0.0.0.25</h2><span style="font-size:12px;"> Release Date: Jan 25, 2018 </span><br><h3 style="padding-top:12px;">New Features</h3><ul><li>Introduced Marketplace to Buy and Sell templates/themes</li></ul><h3 style="padding-top:12px;">Bugs Fixed</h3><ul><li>Side Menu now links to tabs</li></ul></div>
 	</div>
 	<?php
 }

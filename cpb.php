@@ -108,7 +108,7 @@ function register_my_custom_menu_page(){
 
 function register_my_custom_submenu_page() {
     add_submenu_page( 'cpb/about', 'About', 'About', 'manage_options', 'cpb/about', 'cpb_about' );
-    add_submenu_page( 'cpb/about', 'Change Log', 'Change Log', 'manage_options', 'cpb/change', 'cpb_change' );
+    add_submenu_page( 'cpb/about', 'Change Log', 'Change Log', 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
     add_submenu_page( 'cpb/about', 'Crew Stats', 'Crew Stats', 'manage_options', 'my-custom-submenu-page_2', 'my_custom_submenu_page_2' );
     //add_submenu_page_3 ... and so on
 }
@@ -190,7 +190,7 @@ if ( is_plugin_active( 'cpb_insynergy/cpb_insynerg.php' ) ) {
 
 }
 
-function cpb_change() {
+/* function cpb_change() {
     ?>
 	<div class="wrap">
 		<h2><?php echo "".CPB_CURRENT_NAME;  ?> - <?php echo "".CPB_CURRENT_VERSION;  ?></h2>
@@ -210,6 +210,7 @@ function cpb_change() {
 	</div>
 	<?php
 }
+*/
 
 
 

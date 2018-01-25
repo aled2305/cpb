@@ -1,0 +1,22 @@
+p#footer-left:after {
+  content: "© 2018 Creative Pixel Design"
+}
+span#footer-thankyou {
+    display: none;
+}
+
+/*Animation Prefs*/
+@-webkit-keyframes pulse {
+      0% {background-color: #ff5f5f;}
+     100% {background-color: #f59595;}
+}
+
+#cpb-update > .plugin-update {
+    background: #ff5f5f !important;
+    -webkit-animation: pulse 0.5s infinite alternate;
+}
+
+#cpb-update > .plugin-update p {
+    color: #fff !important;
+    margin-top: 16px;
+}

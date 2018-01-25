@@ -108,7 +108,7 @@ function register_my_custom_menu_page(){
 
 function register_my_custom_submenu_page() {
     add_submenu_page( 'cpb/about', 'About', 'About', 'manage_options', 'cpb/about', 'cpb_about' );
-    add_submenu_page( 'cpb/about', "What's New", 'Change Log', 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
+    add_submenu_page( 'cpb/about', "What's New", "What's New", 'manage_options', 'cpb%2Fabout&tab=second', 'cpb_change' );
     add_submenu_page( 'cpb/about', 'Crew Stats', 'Crew Stats', 'manage_options', 'my-custom-submenu-page_2', 'my_custom_submenu_page_2' );
     //add_submenu_page_3 ... and so on
 }

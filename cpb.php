@@ -9,9 +9,9 @@ Description: A collection of plugins installed on all Creative Pixel websites. I
 */
 
 
-include dirname(__FILE__) . '/Clientside/index.php';
 include dirname(__FILE__) . '/wp-post-page-clone/wp-post-page-clone.php';
 include dirname(__FILE__) . '/autologin-links/autologin-links.php';
+include dirname(__FILE__) . '/ultra-admin/ultra-core.php';
 
 /* --------------------------------------------------------------------
 AUTO Update Check
